@@ -46,4 +46,10 @@ Pasos para instalar, configurar y trabajar en git
 	git pull: recupera la información del servidor del que clonaste, y automáticamente se intenta unir con el código con el que estás trabajando actualmente.
 	git push [nombre-remoto][nombre-rama] Si quieres enviar tu rama maestra (master) a tu servidor origen (origin)
 	git tag -a v1.4 -m 'my version 1.4' Agregar Etiquetas
+
+6- General llave privada y publica.
+    prtograma para wind
+    en linux es
+    ssh-keygen -t rsa -C "your.email@example.com" -b 4096
+    cat ~/.ssh/id_rsa.pub
 			
