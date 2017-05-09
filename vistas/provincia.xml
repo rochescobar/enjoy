@@ -18,13 +18,13 @@
             <field name="type">form</field>
             <field name="arch" type="xml">
                 <form string="provincia">
-                    <sheet string="provincia">
-                        <label for="name" class="oe_edit_only" string="Nombre de la Provincia" colspan="2"/>
+                    <sheet string="Provinces">
+                        <label for="name" class="oe_edit_only" string="Province name" colspan="2"/>
                         <h1>
-                            <field name="name" placeholder="Nombre" style="width: 10em" colspan="2"/>
+                            <field name="name" placeholder="Name" style="width: 10em" colspan="2"/>
                         </h1>
                         <notebook colspan="4">
-                            <page string="Localizaciones">
+                            <page string="Locations">
                                 <field name="lugar_ids" widget="one2many_list" colspan="4" nolabel="1"
                                        mode="tree" options="{'no_open': True, 'no_create': True}">
                                     <tree default_order='name' editable="botton">
@@ -55,7 +55,7 @@
 
         <!--  ACCIONES -->
         <record model="ir.actions.act_window" id="action_provincia">
-            <field name="name">provincias</field>
+            <field name="name">Provinces</field>
             <field name="res_model">enjoy.provincia</field>
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">
@@ -67,7 +67,7 @@
             </field>
         </record>
 
-        <menuitem id="enjoy_provincias" name="Provincias" parent="enjoy_casa_config" sequence="0"
+        <menuitem id="enjoy_provincias" name="Provinces" parent="enjoy_casa_config" sequence="0"
                   action="action_provincia" groups="enjoy.group_enjoy_admin"/>
     </data>
 </odoo>

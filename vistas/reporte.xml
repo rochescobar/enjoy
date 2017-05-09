@@ -26,17 +26,17 @@
             <field name="arch" type="xml">
                 <form string="reporte">
                     <header>
-                        <button string="Confirmar Reporte" name="confirmar" states="Borrador" type="workflow"
+                        <button string="Confirm Report" name="confirmar" states="Borrador" type="workflow"
                                 class="oe_highlight"/>
-                        <button string="Reporte Hecho" name="done" states="Confirmado" type="workflow"
+                        <button string="Report Done" name="done" states="Confirmado" type="workflow"
                                 class="oe_highlight"/>
-                        <button string="Cancelar Reporte" name="cancelar" states="Confirmado" type="workflow"/>
+                        <button string="Cancel Report" name="cancelar" states="Confirmado" type="workflow"/>
 
                         <field name="state" widget="statusbar"
                                statusbar_visible="Confirmado,Cancelado,Hecho"/>
                     </header>
                     <sheet string="reporte">
-                        <group string="Reporte de reserva">
+                        <group string="Reservation Report">
                             <label for="name" class="oe_edit_only" string="Nombre de la Propiedad" colspan="2"/>
                             <h1>
                                 <field name="name" placeholder="Casa" style="width: 10em" colspan="2"
@@ -45,7 +45,7 @@
                             </h1>
                             <group col="4">
                                 <group colspan="4">
-                                    <label for="fecha_inicio" string="Reserva desde "/>
+                                    <label for="fecha_inicio" string="Booked From "/>
                                     <div>
                                         <field name="fecha_inicio" style="width: 4em" colspan="1" class="oe_inline"
                                                attrs="{'readonly':[('state','!=','Borrador')]}"/>
@@ -90,7 +90,7 @@
 
         <!--  ACCIONES -->
         <record model="ir.actions.act_window" id="action_reporte">
-            <field name="name">Reportes</field>
+            <field name="name">Reports</field>
             <field name="res_model">enjoy.reporte</field>
             <field name="view_mode">tree,form</field>
             <field name="context">{"search_default_groupby_state" : True"}</field>
@@ -103,7 +103,7 @@
             </field>
         </record>
 
-        <menuitem id="enjoy_reportes" name="Reportes" parent="menu_enjoy_casa" sequence="1"
+        <menuitem id="enjoy_reportes" name="Reports" parent="menu_enjoy_casa" sequence="1"
                   action="action_reporte"/>
     </data>
 </odoo>

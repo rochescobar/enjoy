@@ -22,11 +22,11 @@
                     <field name="nivel"/>
                     <group expand="1" string="Group By">
                         <filter name="groupby_provincia_id" context="{'group_by' : 'provincia'}"
-                                string="Provincia"/>
+                                string="Province"/>
                         <filter name="groupby_nivelx" context="{'group_by' : 'nivelx'}"
-                                string="Nivel"/>
+                                string="Level"/>
                          <filter name="groupby_lugar" context="{'group_by' : 'lugar'}"
-                                string="Localización"/>
+                                string="Location"/>
                     </group>
                 </search>
             </field>
@@ -82,10 +82,10 @@
                         <div class="oe_title">
                             <label for="name" class="oe_edit_only"/>
                             <h1>
-                                <field name="name" placeholder="Nombre"/>
+                                <field name="name" placeholder="Name"/>
                             </h1>
                         </div>
-                        <group string="Información Personal" col="12">
+                        <group string="Personal information" col="12">
                             <field name="propiedad" colspan="3" groups="enjoy.group_enjoy_admin"/>
                             <field name="phone" colspan="3" groups="enjoy.group_enjoy_admin"/>
                             <field name="dir" colspan="6" groups="enjoy.group_enjoy_admin"/>
@@ -131,7 +131,7 @@
                             </group>
                         </group>
                         <group>
-                            <group col="6" string="Imagenes para el Catálogo" colspan="12">
+                            <group col="6" string="Images for Catalog" colspan="12">
                                 <field name="image_lateral" widget='image'
                                        options='{"preview_image":"image_lateral", "size": [200, 200]}'/>
                                 <field name="image_foot1" widget='image'
@@ -172,7 +172,7 @@
 
         <!--  ACCIONES -->
         <record model="ir.actions.act_window" id="action_casa">
-            <field name="name">Casas</field>
+            <field name="name">Houses</field>
             <field name="res_model">enjoy.casa</field>
             <field name="view_mode">kanban,tree,form</field>
             <field name="help" type="html">
@@ -184,7 +184,7 @@
             </field>
         </record>
 
-        <menuitem id="enjoy_casas" name="Casas" parent="menu_enjoy_casa" sequence="1"
+        <menuitem id="enjoy_casas" name="Houses" parent="menu_enjoy_casa" sequence="1"
                   action="action_casa"/>
     </data>
 </odoo>

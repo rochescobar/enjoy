@@ -20,11 +20,11 @@
                     <sheet string="tablilla">
                         <label for="name" class="oe_edit_only" string="Nombre"/>
                         <h1>
-                            <field name="name" placeholder="Nombre de la Tablilla" style="width: 20em" colspan="2"/>
+                            <field name="name" placeholder="Table Name" style="width: 20em" colspan="2"/>
                         </h1>
                         <notebook colspan="4">
                             <page string="Traslados">
-                                <group string="Recorrido (Traslados)">
+                                <group string="Tour (Transfers)">
                                     <field name="traslado_ids" widget="one2many_list" colspan="4" nolabel="1"
                                            mode="tree" options="{'no_open': True, 'no_create': True}">
                                         <tree default_order='name' editable="botton">
@@ -40,7 +40,7 @@
                                 </group>
                             </page>
                             <page string="Por Día">
-                                <group string="Recorrido (Renta por Día (8 horas de Trabajo))">
+                                <group string="Tour (Rent per Day (8 hours of Work))">
                                     <field name="diario_ids" widget="one2many_list" colspan="4" nolabel="1"
                                            mode="tree" options="{'no_open': True, 'no_create': True}">
                                         <tree default_order='name' editable="botton">
@@ -53,7 +53,7 @@
                                         </tree>
                                     </field>
                                 </group>
-                                <group string="Condiciones de la Renta">
+                                <group string="Terms and Conditions">
                                     <field name="condicion_ids" widget="one2many_list" options="{'no_open': True}"
                                            nolabel="1" mode="tree">
                                         <tree default_order='name' options="{'no_open': True}" editable="botton">
@@ -85,19 +85,12 @@
 
         <!--  ACCIONES -->
         <record model="ir.actions.act_window" id="action_tablilla">
-            <field name="name">Tablilla</field>
+            <field name="name">Clapboard</field>
             <field name="res_model">enjoy.tablilla</field>
             <field name="view_mode">tree,form</field>
-            <field name="help" type="html">
-                <p class="oe_view_nocontent_create">
-                    Haga clic aquí para añadir una tablilla al sistema.
-                </p>
-                <p>
-                </p>
-            </field>
         </record>
 
-        <menuitem id="enjoy_tablilla" name="Tablilla" parent="menu_enjoy" sequence="4"
+        <menuitem id="enjoy_tablilla" name="Clapboard" parent="menu_enjoy" sequence="4"
                   action="action_tablilla"/>
     </data>
 </odoo>

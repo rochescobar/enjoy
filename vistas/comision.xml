@@ -32,7 +32,7 @@
 
         <!--  ACCIONES -->
         <record model="ir.actions.act_window" id="action_comision">
-            <field name="name">Comisiones</field>
+            <field name="name">Commissions</field>
             <field name="res_model">enjoy.comision</field>
             <field name="view_mode">tree</field>
             <field name="help" type="html">
@@ -43,7 +43,7 @@
                 </p>
             </field>
         </record>
-        <menuitem id="menu_enjoy_casa_comision" name="Comisiones" parent="menu_enjoy_casa" sequence="2"
+        <menuitem id="menu_enjoy_casa_comision" name="Commissions" parent="menu_enjoy_casa" sequence="2"
                   action="action_comision"/>
     </data>
 </odoo>

@@ -18,12 +18,12 @@
             <field name="arch" type="xml">
                 <form string="modelo">
                     <sheet string="modelo">
-                        <label for="name" class="oe_edit_only" string="Nombre del Modelo"/>
+                        <label for="name" class="oe_edit_only" string="Model Name"/>
                         <h1>
-                            <field name="name" placeholder="Modelo" style="width: 20em" colspan="2"/>
+                            <field name="name" placeholder="Model" style="width: 20em" colspan="2"/>
                         </h1>
                         <notebook colspan="4">
-                            <page string="Autos">
+                            <page string="Cars">
                                 <field name="auto_ids" widget="one2many_list" colspan="4" nolabel="1" mode="tree">
                                     <tree string="Autos" default_order='name'>
                                         <field name="name"/>
@@ -55,7 +55,7 @@
 
         <!--  ACCIONES -->
         <record model="ir.actions.act_window" id="action_modelo">
-            <field name="name">Modelos</field>
+            <field name="name">Models</field>
             <field name="res_model">enjoy.modelo</field>
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">
@@ -67,7 +67,7 @@
             </field>
         </record>
 
-        <menuitem id="enjoy_modelos" name="Modelos" parent="enjoy_auto_config" sequence="2"
+        <menuitem id="enjoy_modelos" name="Models" parent="enjoy_auto_config" sequence="2"
                   action="action_modelo"/>
     </data>
 </odoo>

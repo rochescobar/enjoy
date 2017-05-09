@@ -20,7 +20,7 @@ Pasos para instalar, configurar y trabajar en git
 			git commit –m "versión inicial del proyecto" (Esto pone a todos los arquivos en seguimiento y les da una confirmacion inicial, commit)
 	3.2- Obtener copia de un repositorio existente
 			Unicarse en el directorio del proyecto (vacio)
-			git clone git://github.com/schacon/grit.git enjoy
+			git clone https://github.com/rochescobar/enjoy.git enjoy
 4- Guardando cambios en el repositorio
 	Ver el estado de tu repositorio:
 	git status

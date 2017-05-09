@@ -21,9 +21,9 @@
             <field name="arch" type="xml">
                 <form string="catalogo">
                     <sheet string="catalogo">
-                        <label for="nombre" class="oe_edit_only" string="Nombre del catálogo"/>
+                        <label for="nombre" class="oe_edit_only" string="Catalogs name"/>
                         <h1>
-                            <field name="nombre" placeholder="Catálogo" style="width: 20em" colspan="2"/>
+                            <field name="nombre" placeholder="Catalogs" style="width: 20em" colspan="2"/>
                         </h1>
                         <group col="6">
                             <field name="lugar"/>
@@ -31,7 +31,7 @@
                             <field name="hasta"/>
                         </group>
                         <notebook>
-                            <page string="Casas">
+                            <page string="Houses">
                                 <field name="casa_ids" colspan="4" nolabel="1" mode="tree">
                                     <tree string="Casas" default_order='name'>
                                         <field name="name"/>
@@ -65,7 +65,7 @@
 
         <!--  ACCIONES -->
         <record model="ir.actions.act_window" id="action_catalogo">
-            <field name="name">Catálogos</field>
+            <field name="name">Catalogs</field>
             <field name="res_model">enjoy.catalogo</field>
             <field name="view_mode">tree,form</field>
             <field name="help" type="html">
@@ -76,7 +76,7 @@
                 </p>
             </field>
         </record>
-        <menuitem id="menu_enjoy_casa_catalogo" name="Catálogos" parent="menu_enjoy_casa" sequence="2"
+        <menuitem id="menu_enjoy_casa_catalogo" name="Catalogs" parent="menu_enjoy_casa" sequence="2"
                   action="action_catalogo"/>
     </data>
 </odoo>
