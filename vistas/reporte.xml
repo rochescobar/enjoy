@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model='ir.ui.view' id='enjoy_reporte_search'>
+            <field name="name">enjoy.reporte.search</field>
+            <field name="model">enjoy.reporte</field>
+            <field name="arch" type="xml">
+                <search string="reportes">
+                    <field name="name"/>
+                    <field name="fecha_inicio"/>
+                    <field name="fecha_fin"/>
+                    <field name="cliente"/>
+                    <field name="descrip"/>
+                    <group expand="1" string="Group By">
+                        <filter name="groupby_state" context="{'group_by' : 'state'}"
+                                string="Estado"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="reporte_form">
+            <field name="name">enjoy.reporte.form</field>
+            <field name="model">enjoy.reporte</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="reporte">
+                    <header>
+                        <button string="Confirmar Reporte" name="confirmar" states="Borrador" type="workflow"
+                                class="oe_highlight"/>
+                        <button string="Reporte Hecho" name="done" states="Confirmado" type="workflow"
+                                class="oe_highlight"/>
+                        <button string="Cancelar Reporte" name="cancelar" states="Confirmado" type="workflow"/>
+
+                        <field name="state" widget="statusbar"
+                               statusbar_visible="Confirmado,Cancelado,Hecho"/>
+                    </header>
+                    <sheet string="reporte">
+                        <group string="Reporte de reserva">
+                            <label for="name" class="oe_edit_only" string="Nombre de la Propiedad" colspan="2"/>
+                            <h1>
+                                <field name="name" placeholder="Casa" style="width: 10em" colspan="2"
+                                       options="{'no_open': True, 'no_create': True}"
+                                       attrs="{'readonly':[('state','!=','Borrador')]}"/>
+                            </h1>
+                            <group col="4">
+                                <group colspan="4">
+                                    <label for="fecha_inicio" string="Reserva desde "/>
+                                    <div>
+                                        <field name="fecha_inicio" style="width: 4em" colspan="1" class="oe_inline"
+                                               attrs="{'readonly':[('state','!=','Borrador')]}"/>
+                                        al
+                                        <field name="fecha_fin" class="oe_inline" nolabel="1"
+                                               attrs="{'readonly':[('state','!=','Borrador')]}"/>
+                                    </div>
+                                </group>
+                                <group colspan="4">
+                                    <field name="cliente" colspan="2" attrs="{'readonly':[('state','!=','Borrador')]}"/>
+                                    <field name="descrip" colspan="2" attrs="{'readonly':[('state','!=','Borrador')]}"/>
+                                </group>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="user_id" readonly="1"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!--Declaración de la vista de árbol-->
+        <record model="ir.ui.view" id="reporte_tree">
+            <field name="name">enjoy.reporte.tree</field>
+            <field name="model">enjoy.reporte</field>
+            <field name="type">tree</field>
+            <field name="target">new</field>
+            <field name="arch" type="xml">
+                <tree string="reporte" default_order='fecha_inicio'
+                      colors="blue:state == 'Confirmado';gray:state == 'Cancelado';green:state == 'Hecho'">
+                    <field name="name"/>
+                    <field name="fecha_inicio"/>
+                    <field name="fecha_fin"/>
+                    <field name="cliente"/>
+                    <field name="descrip"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <!--  ACCIONES -->
+        <record model="ir.actions.act_window" id="action_reporte">
+            <field name="name">Reportes</field>
+            <field name="res_model">enjoy.reporte</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{"search_default_groupby_state" : True"}</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Haga clic aquí para añadir un reporte al sistema.
+                </p>
+                <p>
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="enjoy_reportes" name="Reportes" parent="menu_enjoy_casa" sequence="1"
+                  action="action_reporte"/>
+    </data>
+</odoo>

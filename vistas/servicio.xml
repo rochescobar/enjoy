@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model='ir.ui.view' id='enjoy_servicio_search'>
+            <field name="name">enjoy.servicio.search</field>
+            <field name="model">enjoy.servicio</field>
+            <field name="arch" type="xml">
+                <search string="servicios">
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="servicio_form">
+            <field name="name">enjoy.servicio.form</field>
+            <field name="model">enjoy.servicio</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="servicio">
+                    <sheet string="servicio">
+                        <field name="image" widget='image' class="oe_avatar"/>
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only"/>
+                            <h1>
+                                <field name="name" placeholder="Nombre"/>
+                            </h1>
+                        </div>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <!--Declaración de la vista de árbol-->
+        <record model="ir.ui.view" id="servicio_tree">
+            <field name="name">enjoy.servicio.tree</field>
+            <field name="model">enjoy.servicio</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="servicio" default_order='name'>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <!--  ACCIONES -->
+        <record model="ir.actions.act_window" id="action_servicio">
+            <field name="name">Servicios</field>
+            <field name="res_model">enjoy.servicio</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Haga clic aquí para añadir una servicio al sistema.
+                </p>
+                <p>
+                </p>
+            </field>
+        </record>
+        <menuitem id="menu_enjoy_casa_servicio" name="Servicios" parent="enjoy_casa_config" sequence="2"
+                  action="action_servicio" groups="enjoy.group_enjoy_admin"/>
+    </data>
+</odoo>

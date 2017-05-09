@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model='ir.ui.view' id='enjoy_zona_search'>
+            <field name="name">enjoy.zona.search</field>
+            <field name="model">enjoy.zona</field>
+            <field name="arch" type="xml">
+                <search string="zonas">
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+
+
+        <!--Declaración de la vista de árbol-->
+        <record model="ir.ui.view" id="zona_tree">
+            <field name="name">enjoy.zona.tree</field>
+            <field name="model">enjoy.zona</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="zona" default_order='name' editable="botton">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <!--  ACCIONES -->
+        <record model="ir.actions.act_window" id="action_zona">
+            <field name="name">Zonas</field>
+            <field name="res_model">enjoy.zona</field>
+            <field name="view_mode">tree</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Haga clic aquí para añadir una zona al sistema.
+                </p>
+                <p>
+                </p>
+            </field>
+        </record>
+        <menuitem id="menu_enjoy_casa_zona" name="Zonas" parent="enjoy_casa_config" sequence="2"
+                  action="action_zona" groups="enjoy.group_enjoy_admin"/>
+    </data>
+</odoo>

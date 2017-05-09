@@ -1,0 +1,62 @@
+<?xml version="1.0" ?>
+<openerp>
+    <data>
+
+        <!-- Workflow enjoy -->
+        <record model="workflow" id="wkf_enjoy_reporte">
+            <field name="name">wkf.enjoy.reporte</field>
+            <field name="osv">enjoy.reporte</field>
+            <field name="on_create">True</field>
+        </record>
+
+        <record model="workflow.activity" id="act_enjoy_borrador">
+            <field name="wkf_id" ref="wkf_enjoy_reporte"/>
+            <field name="flow_start">True</field>
+            <field name="name">borrador</field>
+            <field name="action">write({'state':'Borrador'})</field>
+            <field name="kind">function</field>
+        </record>
+
+        <record model="workflow.activity" id="act_enjoy_confirmado">
+            <field name="wkf_id" ref="wkf_enjoy_reporte"/>
+            <field name="name">confirmado</field>
+            <field name="kind">function</field>
+            <field name="action">state_confirmado()</field>
+            <!--<field name="split_mode">OR</field>-->
+        </record>
+
+        <record model="workflow.activity" id="act_enjoy_cancelado">
+            <field name="wkf_id" ref="wkf_enjoy_reporte"/>
+            <field name="name">cancelado</field>
+            <field name="flow_stop">True</field>
+            <field name="kind">stopall</field>
+            <field name="action">state_cancelado()</field>
+            <field name="split_mode">XOR</field>
+        </record>
+
+        <record model="workflow.activity" id="act_enjoy_done">
+            <field name="wkf_id" ref="wkf_enjoy_reporte"/>
+            <field name="name">done</field>
+            <field name="flow_stop">True</field>
+            <field name="kind">stopall</field>
+            <field name="action">state_done()</field>
+            <field name="join_mode">XOR</field>
+        </record>
+
+        <record model="workflow.transition" id="enjoy_t1">
+            <field name="act_from" ref="act_enjoy_borrador"/>
+            <field name="act_to" ref="act_enjoy_confirmado"/>
+            <field name="signal">confirmar</field>
+        </record>
+        <record model="workflow.transition" id="enjoy_t2">
+            <field name="act_from" ref="act_enjoy_confirmado"/>
+            <field name="act_to" ref="act_enjoy_cancelado"/>
+            <field name="signal">cancelar</field>
+        </record>
+        <record model="workflow.transition" id="enjoy_t3">
+            <field name="act_from" ref="act_enjoy_confirmado"/>
+            <field name="act_to" ref="act_enjoy_done"/>
+            <field name="signal">done</field>
+        </record>
+    </data>
+</openerp>

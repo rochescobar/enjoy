@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <menuitem id="menu_enjoy" name="Autos" web_icon="enjoy,static/description/icon_auto.png"/>
+        <menuitem id="enjoy_auto_config" name="Configuración" parent="menu_enjoy" sequence="10"
+                  groups="enjoy.group_enjoy_admin"/>
+
+        <menuitem id="menu_enjoy_casa" name="Casas" web_icon="enjoy,static/description/icon_casa.jpg"/>
+        <menuitem id="enjoy_casa_config" name="Configuración" parent="menu_enjoy_casa" sequence="10"
+                  groups="enjoy.group_enjoy_admin"/>
+
+    </data>
+</odoo>

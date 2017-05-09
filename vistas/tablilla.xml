@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model='ir.ui.view' id='enjoy_tablilla_search'>
+            <field name="name">enjoy.tablilla.search</field>
+            <field name="model">enjoy.tablilla</field>
+            <field name="arch" type="xml">
+                <search string="tablillas">
+                    <field name="name"/>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="tablilla_form">
+            <field name="name">enjoy.tablilla.form</field>
+            <field name="model">enjoy.tablilla</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="tablilla">
+                    <sheet string="tablilla">
+                        <label for="name" class="oe_edit_only" string="Nombre"/>
+                        <h1>
+                            <field name="name" placeholder="Nombre de la Tablilla" style="width: 20em" colspan="2"/>
+                        </h1>
+                        <notebook colspan="4">
+                            <page string="Traslados">
+                                <group string="Recorrido (Traslados)">
+                                    <field name="traslado_ids" widget="one2many_list" colspan="4" nolabel="1"
+                                           mode="tree" options="{'no_open': True, 'no_create': True}">
+                                        <tree default_order='name' editable="botton">
+                                            <field name="name"/>
+                                            <field name="origen"/>
+                                            <field name="destino"/>
+                                            <field name="van3"/>
+                                            <field name="van4"/>
+                                            <field name="van8"/>
+                                            <field name="van11"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            <page string="Por Día">
+                                <group string="Recorrido (Renta por Día (8 horas de Trabajo))">
+                                    <field name="diario_ids" widget="one2many_list" colspan="4" nolabel="1"
+                                           mode="tree" options="{'no_open': True, 'no_create': True}">
+                                        <tree default_order='name' editable="botton">
+                                            <field name="name"/>
+                                            <field name="condicion_id"/>
+                                            <field name="van3"/>
+                                            <field name="van4"/>
+                                            <field name="van8"/>
+                                            <field name="van11"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                                <group string="Condiciones de la Renta">
+                                    <field name="condicion_ids" widget="one2many_list" options="{'no_open': True}"
+                                           nolabel="1" mode="tree">
+                                        <tree default_order='name' options="{'no_open': True}" editable="botton">
+                                            <field name="name"/>
+                                            <field name="descrip"/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!--Declaración de la vista de árbol-->
+        <record model="ir.ui.view" id="tablilla_tree">
+            <field name="name">enjoy.tablilla.tree</field>
+            <field name="model">enjoy.tablilla</field>
+            <field name="type">tree</field>
+            <field name="target">new</field>
+            <field name="arch" type="xml">
+                <tree string="tablilla" default_order='name'>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <!--  ACCIONES -->
+        <record model="ir.actions.act_window" id="action_tablilla">
+            <field name="name">Tablilla</field>
+            <field name="res_model">enjoy.tablilla</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Haga clic aquí para añadir una tablilla al sistema.
+                </p>
+                <p>
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="enjoy_tablilla" name="Tablilla" parent="menu_enjoy" sequence="4"
+                  action="action_tablilla"/>
+    </data>
+</odoo>

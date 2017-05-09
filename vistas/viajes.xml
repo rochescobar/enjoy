@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model='ir.ui.view' id='enjoy_viaje_search'>
+            <field name="name">enjoy.viaje.search</field>
+            <field name="model">enjoy.viaje</field>
+            <field name="arch" type="xml">
+                <search string="viajes">
+                    <field name="origen"/>
+                    <field name="destino"/>
+                    <field name="precio"/>
+                    <field name="auto_id"/>
+                    <field name="capacidad"/>
+                    <field name="phone"/>
+                    <field name="aire"/>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="enjoy_viaje_form">
+            <field name="name">enjoy.viaje.form</field>
+            <field name="model">enjoy.viaje</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="viaje" create="false">
+
+                    <sheet string="viaje">
+                        <div class="oe_title">
+                            <label for="auto_id" class="oe_edit_only"/>
+                            <h1>
+                                <field name="auto_id" placeholder="Nombre" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group string="Datos del Viaje" col="6">
+                            <field name="origen" readonly="1"/>
+                            <field name="destino" readonly="1"/>
+                            <field name="precio" readonly="1"/>
+                            <field name="phone" readonly="1"/>
+                            <field name="capacidad" readonly="1"/>
+                            <field name="aire" readonly="1"/>
+                        </group>
+                        <group>
+                            <group col="2" string="Transfers del Auto para este Recorrido">
+                            </group>
+                            <group col="4">
+                                <field name="transfer_ids" widget="one2many_list" colspan="4" nolabel="1"
+                                       mode="tree">
+                                    <tree string="Viajes" default_order='fecha' editable="top">
+                                        <field name="fecha"/>
+                                        <field name="precio"/>
+                                        <field name="utilidad"/>
+                                    </tree>
+                                </field>
+                            </group>
+                        </group>
+
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!--Declaración de la vista de árbol-->
+        <record model="ir.ui.view" id="viaje_tree">
+            <field name="name">enjoy.viaje.tree</field>
+            <field name="model">enjoy.viaje</field>
+            <field name="type">tree</field>
+            <field name="target">new</field>
+            <field name="arch" type="xml">
+                <tree edit="false" default_order='precio' create="false">
+                    <field name="auto_id"/>
+                    <field name="origen"/>
+                    <field name="destino"/>
+                    <field name="capacidad"/>
+                    <field name="aire"/>
+                    <field name="phone"/>
+                    <field name="precio"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <!--  ACCIONES -->
+        <record model="ir.actions.act_window" id="action_viaje">
+            <field name="name">Viajes</field>
+            <field name="res_model">enjoy.viaje</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Haga clic aquí para añadir una viaje al sistema.
+                </p>
+                <p>
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="enjoy_viajes" name="Viajes" parent="menu_enjoy" sequence="4"
+                  action="action_viaje"/>
+    </data>
+</odoo>

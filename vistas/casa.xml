@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model='ir.ui.view' id='enjoy_casa_search'>
+            <field name="name">enjoy.casa.search</field>
+            <field name="model">enjoy.casa</field>
+            <field name="arch" type="xml">
+                <search string="casas">
+                    <field name="propiedad"/>
+                    <field name="alojamiento"/>
+                    <field name="dispone"/>
+                    <field name="capacidad"/>
+                    <field name="provincia"/>
+                    <field name="dormitorios"/>
+                    <field name="cama_ids"/>
+                    <field name="banno_ids"/>
+                    <field name="servicio_ids"/>
+                    <field name="zona_ids"/>
+                    <field name="para"/>
+                    <field name="precio"/>
+                    <field name="fpago"/>
+                    <field name="nivel"/>
+                    <group expand="1" string="Group By">
+                        <filter name="groupby_provincia" context="{'group_by' : 'provincia'}"
+                                string="Provincia"/>
+                        <filter name="groupby_nivelx" context="{'group_by' : 'nivelx'}"
+                                string="Nivel"/>
+                         <filter name="groupby_lugar" context="{'group_by' : 'lugar'}"
+                                string="Localización"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="enjoy_kanban_view_casas" model="ir.ui.view">
+            <field name="name">enjoy.casa.kanban</field>
+            <field name="model">enjoy.casa</field>
+            <field name="priority">10</field>
+            <field name="arch" type="xml">
+                <kanban class="o_hr_employee_kanban">
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_global_click">
+                                <div class="o_kanban_image">
+                                    <img t-att-src="kanban_image('enjoy.casa', 'image_medium', record.id.value)"
+                                         options='{"size": [200, 200]}'/>
+                                </div>
+                                <div class="oe_kanban_details">
+                                    <strong>
+                                        <field name="name"/>
+                                    </strong>
+                                    <ul>
+                                        <li t-if="record.lugar.raw_value">
+                                            <field name="lugar"/>
+                                        </li>
+                                        <li t-if="record.phone.raw_value" groups="enjoy.group_enjoy_admin">
+                                            <i class="fa fa-phone"></i>
+                                            <field name="phone"/>
+                                        </li>
+                                        <li>
+                                            <field name="dispone"/>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="casa_form">
+            <field name="name">enjoy.casa.form</field>
+            <field name="model">enjoy.casa</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="casa">
+                    <sheet string="casa">
+                        <field name="image" widget='image' class="oe_avatar"
+                               options='{"preview_image":"image_medium"}'/>
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only"/>
+                            <h1>
+                                <field name="name" placeholder="Nombre"/>
+                            </h1>
+                        </div>
+                        <group string="Información Personal" col="12">
+                            <field name="propiedad" colspan="3" groups="enjoy.group_enjoy_admin"/>
+                            <field name="phone" colspan="3" groups="enjoy.group_enjoy_admin"/>
+                            <field name="dir" colspan="6" groups="enjoy.group_enjoy_admin"/>
+                            <field name="lugar" colspan="3"/>
+                            <field name="provincia" colspan="3" readonly="True"/>
+                            <!--<field name="catalogo_id" colspan="6"/>-->
+
+                        </group>
+                        <group string="Datos del Hospedaje" col="12">
+                            <group colspan="4">
+                                <field name="alojamiento"/>
+                                <field name="dispone"/>
+                                <field name="capacidad"/>
+                                <field name="dormitorios"/>
+                                <field name="para"/>
+                                <field name="nivel"/>
+                                <field name="nivelx" invisible="1"/>
+                                <label for="precio" string="Precio y Forma de Pago"/>
+                                <div>
+                                    <field name="precio" style="width: 4em" colspan="1" class="oe_inline"/>
+                                    -
+                                    <field name="fpago" class="oe_inline" nolabel="1"/>
+                                </div>
+                                <!--<field name="comision"/>-->
+                            </group>
+                            <group colspan="4">
+                                <field name="servicio_ids" options="{'no_open': True}"/>
+                                <field name="zona_ids" options="{'no_open': True}"/>
+                            </group>
+                            <group colspan="4">
+                                <field name="cama_ids" widget="one2many_list" mode="tree" options="{'no_open': True}">
+                                    <tree string="Viajes" default_order='origen' editable="bottom">
+                                        <field name="cantidad"/>
+                                        <field name="tipo"/>
+                                    </tree>
+                                </field>
+                                <field name="banno_ids" widget="one2many_list" mode="tree" options="{'no_open': True}">
+                                    <tree string="Viajes" default_order='origen' editable="bottom">
+                                        <field name="cantidad"/>
+                                        <field name="tipo"/>
+                                    </tree>
+                                </field>
+                            </group>
+                        </group>
+                        <group>
+                            <group col="6" string="Imagenes para el Catálogo" colspan="12">
+                                <field name="image_lateral" widget='image'
+                                       options='{"preview_image":"image_lateral", "size": [200, 200]}'/>
+                                <field name="image_foot1" widget='image'
+                                       options='{"preview_image":"image_foot1", "size": [200, 200]}'/>
+                                <field name="image_foot2" widget='image'
+                                       options='{"preview_image":"image_foot2", "size": [200, 200]}'/>
+                            </group>
+                        </group>
+
+
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!--Declaración de la vista de árbol-->
+        <record model="ir.ui.view" id="casa_tree">
+            <field name="name">enjoy.casa.tree</field>
+            <field name="model">enjoy.casa</field>
+            <field name="type">tree</field>
+            <field name="target">new</field>
+            <field name="arch" type="xml">
+                <tree string="casa" default_order='name'>
+                    <field name="name"/>
+                    <field name="propiedad"/>
+                    <field name="alojamiento"/>
+                    <field name="dispone"/>
+                    <field name="capacidad"/>
+                    <field name="dormitorios"/>
+                    <field name="provincia"/>
+                    <field name="lugar"/>
+                    <field name="precio"/>
+                    <field name="nivel"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <!--  ACCIONES -->
+        <record model="ir.actions.act_window" id="action_casa">
+            <field name="name">Casas</field>
+            <field name="res_model">enjoy.casa</field>
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Haga clic aquí para añadir una casa al sistema.
+                </p>
+                <p>
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="enjoy_casas" name="Casas" parent="menu_enjoy_casa" sequence="1"
+                  action="action_casa"/>
+    </data>
+</odoo>

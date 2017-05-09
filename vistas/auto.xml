@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model='ir.ui.view' id='enjoy_auto_search'>
+            <field name="name">enjoy.auto.search</field>
+            <field name="model">enjoy.auto</field>
+            <field name="arch" type="xml">
+                <search string="autos">
+                    <field name="name"/>
+                    <field name="licencia"/>
+                    <field name="modelo_id"/>
+                    <field name="aire"/>
+                    <field name="capacidad"/>
+                    <field name="radica"/>
+                    <field name="phone"/>
+                    <field name="tarjeta"/>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="auto_form">
+            <field name="name">enjoy.auto.form</field>
+            <field name="model">enjoy.auto</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="auto">
+                    <sheet string="auto">
+                        <label for="chofer" class="oe_edit_only" string="Chofer del auto"/>
+                        <h1>
+                            <field name="chofer" placeholder="Chofer" style="width: 20em" colspan="2"/>
+                        </h1>
+                        <group col="4">
+                            <field name="propietario"/>
+                            <field name="licencia"/>
+                            <field name="modelo_id"/>
+                            <field name="aire"/>
+                            <field name="capacidad"/>
+                            <field name="radica"/>
+                            <field name="phone"/>
+                            <field name="tarjeta"/>
+                        </group>
+                        <notebook>
+                            <page string="Viajes">
+                                <field name="viaje_ids" widget="one2many_list" colspan="4" nolabel="1" mode="tree">
+                                    <tree string="Viajes" default_order='origen' editable="bottom">
+                                        <field name="origen"/>
+                                        <field name="destino"/>
+                                        <field name="precio"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!--Declaración de la vista de árbol-->
+        <record model="ir.ui.view" id="auto_tree">
+            <field name="name">enjoy.auto.tree</field>
+            <field name="model">enjoy.auto</field>
+            <field name="type">tree</field>
+            <field name="target">new</field>
+            <field name="arch" type="xml">
+                <tree string="auto" default_order='chofer'>
+                    <field name="chofer"/>
+                    <field name="propietario"/>
+                    <field name="licencia"/>
+                    <field name="modelo_id"/>
+                    <field name="aire"/>
+                    <field name="capacidad"/>
+                    <field name="radica"/>
+                    <field name="phone"/>
+                    <field name="tarjeta"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <!--  ACCIONES -->
+        <record model="ir.actions.act_window" id="action_auto">
+            <field name="name">Autos</field>
+            <field name="res_model">enjoy.auto</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Haga clic aquí para añadir una auto al sistema.
+                </p>
+                <p>
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="enjoy_autos" name="Autos" parent="menu_enjoy" sequence="1"
+                  action="action_auto"/>
+    </data>
+</odoo>

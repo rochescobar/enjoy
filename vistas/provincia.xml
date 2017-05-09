@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model='ir.ui.view' id='enjoy_provincia_search'>
+            <field name="name">enjoy.provincia.search</field>
+            <field name="model">enjoy.provincia</field>
+            <field name="arch" type="xml">
+                <search string="provincias">
+                    <field name="name"/>
+                    <field name="lugar_ids"/>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="provincia_form">
+            <field name="name">enjoy.provincia.form</field>
+            <field name="model">enjoy.provincia</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="provincia">
+                    <sheet string="provincia">
+                        <label for="name" class="oe_edit_only" string="Nombre de la Provincia" colspan="2"/>
+                        <h1>
+                            <field name="name" placeholder="Nombre" style="width: 10em" colspan="2"/>
+                        </h1>
+                        <notebook colspan="4">
+                            <page string="Localizaciones">
+                                <field name="lugar_ids" widget="one2many_list" colspan="4" nolabel="1"
+                                       mode="tree" options="{'no_open': True, 'no_create': True}">
+                                    <tree default_order='name' editable="botton">
+                                        <field name="name"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!--Declaración de la vista de árbol-->
+        <record model="ir.ui.view" id="provincia_tree">
+            <field name="name">enjoy.provincia.tree</field>
+            <field name="model">enjoy.provincia</field>
+            <field name="type">tree</field>
+            <field name="target">new</field>
+            <field name="arch" type="xml">
+                <tree string="provincia">
+                    <field name="name"/>
+                    <field name="lugar_ids"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <!--  ACCIONES -->
+        <record model="ir.actions.act_window" id="action_provincia">
+            <field name="name">provincias</field>
+            <field name="res_model">enjoy.provincia</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Haga clic aquí para añadir un provincia al sistema.
+                </p>
+                <p>
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="enjoy_provincias" name="Provincias" parent="enjoy_casa_config" sequence="0"
+                  action="action_provincia" groups="enjoy.group_enjoy_admin"/>
+    </data>
+</odoo>

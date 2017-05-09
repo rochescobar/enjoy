@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model='ir.ui.view' id='enjoy_lugar_search'>
+            <field name="name">enjoy.lugar.search</field>
+            <field name="model">enjoy.lugar</field>
+            <field name="arch" type="xml">
+                <search string="lugars">
+                    <field name="name"/>
+                    <field name="provincia_id"/>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="lugar_form">
+            <field name="name">enjoy.lugar.form</field>
+            <field name="model">enjoy.lugar</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="lugar">
+                    <sheet string="lugar">
+                        <label for="name" class="oe_edit_only" string="Nombre del lugar"/>
+                        <h1>
+                            <field name="name" placeholder="lugar" style="width: 20em" colspan="2"/>
+                        </h1>
+                        <group>
+                            <field name="provincia_id"/>
+                        </group>
+
+                        <notebook colspan="4">
+                            <page string="Autos">
+                                <field name="auto_ids" widget="one2many_list" colspan="4" nolabel="1" mode="tree">
+                                    <tree string="Autos" default_order='name'>
+                                        <field name="name"/>
+                                        <field name="capacidad"/>
+                                        <field name="radica"/>
+                                        <field name="phone"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Casas">
+                                <field name="casa_ids" widget="one2many_list" colspan="4" nolabel="1" mode="tree">
+                                    <tree string="casa" default_order='name'>
+                                        <field name="name"/>
+                                        <field name="propiedad"/>
+                                        <field name="alojamiento"/>
+                                        <field name="dispone"/>
+                                        <field name="capacidad"/>
+                                        <field name="dormitorios"/>
+                                        <field name="provincia"/>
+                                        <field name="precio"/>
+                                        <field name="nivel"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!--Declaración de la vista de árbol-->
+        <record model="ir.ui.view" id="lugar_tree">
+            <field name="name">enjoy.lugar.tree</field>
+            <field name="model">enjoy.lugar</field>
+            <field name="type">tree</field>
+            <field name="target">new</field>
+            <field name="arch" type="xml">
+                <tree string="lugar" default_order='name'>
+                    <field name="name"/>
+                    <field name="provincia_id"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <!--  ACCIONES -->
+        <record model="ir.actions.act_window" id="action_lugar">
+            <field name="name">Lugares</field>
+            <field name="res_model">enjoy.lugar</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Haga clic aquí para añadir una lugar al sistema.
+                </p>
+                <p>
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="enjoy_lugars" name="Lugares" parent="enjoy_auto_config" sequence="2"
+                  action="action_lugar"/>
+    </data>
+</odoo>

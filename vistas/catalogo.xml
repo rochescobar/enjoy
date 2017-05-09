@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model='ir.ui.view' id='enjoy_catalogo_search'>
+            <field name="name">enjoy.catalogo.search</field>
+            <field name="model">enjoy.catalogo</field>
+            <field name="arch" type="xml">
+                <search string="catalogos">
+                    <field name="nombre"/>
+                    <field name="lugar"/>
+                    <field name="desde"/>
+                    <field name="hasta"/>
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="catalogo_form">
+            <field name="name">enjoy.catalogo.form</field>
+            <field name="model">enjoy.catalogo</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="catalogo">
+                    <sheet string="catalogo">
+                        <label for="nombre" class="oe_edit_only" string="Nombre del catálogo"/>
+                        <h1>
+                            <field name="nombre" placeholder="Catálogo" style="width: 20em" colspan="2"/>
+                        </h1>
+                        <group col="6">
+                            <field name="lugar"/>
+                            <field name="desde"/>
+                            <field name="hasta"/>
+                        </group>
+                        <notebook>
+                            <page string="Casas">
+                                <field name="casa_ids" colspan="4" nolabel="1" mode="tree">
+                                    <tree string="Casas" default_order='name'>
+                                        <field name="name"/>
+                                        <field name="lugar"/>
+                                        <field name="dispone"/>
+                                        <field name="precio"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record model="ir.ui.view" id="catalogo_tree">
+            <field name="name">enjoy.catalogo.tree</field>
+            <field name="model">enjoy.catalogo</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="catalogo" default_order='name'>
+                    <field name="nombre"/>
+                    <field name="lugar"/>
+                    <field name="desde"/>
+                    <field name="hasta"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <!--  ACCIONES -->
+        <record model="ir.actions.act_window" id="action_catalogo">
+            <field name="name">Catálogos</field>
+            <field name="res_model">enjoy.catalogo</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Haga clic aquí para añadir una catalogo al sistema.
+                </p>
+                <p>
+                </p>
+            </field>
+        </record>
+        <menuitem id="menu_enjoy_casa_catalogo" name="Catálogos" parent="menu_enjoy_casa" sequence="2"
+                  action="action_catalogo"/>
+    </data>
+</odoo>

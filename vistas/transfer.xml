@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model='ir.ui.view' id='enjoy_transfer_search'>
+            <field name="name">enjoy.transfer.search</field>
+            <field name="model">enjoy.transfer</field>
+            <field name="arch" type="xml">
+                <search string="transfers">
+                    <field name="viaje_id"/>
+                    <field name="precio"/>
+                    <field name="fecha"/>
+                </search>
+            </field>
+        </record>
+
+
+        <!--Declaración de la vista de árbol-->
+        <record model="ir.ui.view" id="transfer_tree">
+            <field name="name">enjoy.transfer.tree</field>
+            <field name="model">enjoy.transfer</field>
+            <field name="type">tree</field>
+            <field name="target">new</field>
+            <field name="arch" type="xml">
+                <tree string="transfer" default_order='fecha' delete="false" create="false" edit="false">
+                    <field name="fecha"/>
+                    <field name="viaje_id"/>
+                    <field name="auto_precio"/>
+                    <field name="precio"/>
+                    <field name="utilidad"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <!--  ACCIONES -->
+        <record model="ir.actions.act_window" id="action_transfer">
+            <field name="name">Transferes</field>
+            <field name="res_model">enjoy.transfer</field>
+            <field name="view_mode">tree</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Haga clic aquí para añadir una transfer al sistema.
+                </p>
+                <p>
+                </p>
+            </field>
+        </record>
+
+        <menuitem id="enjoy_transfers" name="Transferes" parent="menu_enjoy" sequence="4"
+                  action="action_transfer"/>
+    </data>
+</odoo>

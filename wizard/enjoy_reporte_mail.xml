@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="enjoy_reporte_mail_view" model="ir.ui.view">
+            <field name="name">enjoy.report.mail.view</field>
+            <field name="model">enjoy.report.mail</field>
+            <field name="arch" type="xml">
+                <form string="Reporte mail">
+                    <group col="4">
+                        <field name="catalogo_id" options="{'no_open': True, 'no_create': True}" colspan="2"/>
+                        <field name="destino_ids" widget="one2many_list" colspan="2" nolabel="1" mode="tree">
+                            <tree string="Autos" default_order='name' editable="bottom">
+                                <field name="name" widget="email"/>
+                            </tree>
+                        </field>
+                    </group>
+
+                    <footer>
+                        <button name="imprimir_reporte" string="Enviar" type="object" default_focus="1"
+                                class="oe_highlight"/>
+                        o
+                        <button string="Cancelar" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_enjoy_reporte_mail_menu" model="ir.actions.act_window">
+            <field name="name">Reporte enjoy</field>
+            <field name="res_model">enjoy.report.mail</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="enjoy_reporte_mail_view"/>
+            <field name="target">new</field>
+        </record>
+
+        <!--<menuitem id="enjoy_casa_mail" name="Enviar Catálogo" parent="menu_enjoy_casa" sequence="10"-->
+                  <!--action="action_enjoy_reporte_mail_menu"/>-->
+
+    </data>
+</odoo>

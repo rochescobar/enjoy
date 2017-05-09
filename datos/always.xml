@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data>
+            <!--&lt;!&ndash;Departamentos&ndash;&gt;-->
+        <!--<record id="demo_departament_0" model="hr.department">-->
+            <!--<field name="name">Departamento 1</field>-->
+        <!--</record>-->
+
+    </data>
+</openerp>

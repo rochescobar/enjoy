@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data noupdate="1">
+        <record id="enjoy_vendedor_comision" model="ir.rule">
+            <field name="name">Comisiones de Vendedores</field>
+            <field name="model_id" ref="model_enjoy_comision"/>
+            <field name="domain_force">[('user_id', '=', user.id)]</field>
+            <field name="groups" eval="[(4,ref('group_enjoy_vendedor'))]"/>
+        </record>
+        <record id="enjoy_vendedor_reporte" model="ir.rule">
+            <field name="name">Reportes de Vendedores</field>
+            <field name="model_id" ref="model_enjoy_reporte"/>
+            <field name="domain_force">[('user_id', '=', user.id)]</field>
+            <field name="groups" eval="[(4,ref('group_enjoy_vendedor'))]"/>
+        </record>
+        <!--<record id="enjoy_director_adminarea" model="ir.rule">-->
+        <!--<field name="name">Director AdminArea</field>-->
+        <!--<field name="model_id" ref="model_enjoy_adminarea"/>-->
+        <!--<field name="domain_force">[('area_id.employee_ids', '=',user.id)]</field>-->
+        <!--<field name="groups" eval="[(4,ref('group_enjoy_director'))]"/>-->
+        <!--</record>-->
+        <!--<record id="enjoy_director_report_notif" model="ir.rule">-->
+        <!--<field name="name">Director Reporte Notif</field>-->
+        <!--<field name="model_id" ref="model_enjoy_report_notif"/>-->
+        <!--<field name="domain_force">[('area_id.employee_ids', '=',user.id)]</field>-->
+        <!--<field name="groups" eval="[(4,ref('group_enjoy_director'))]"/>-->
+        <!--</record>-->
+        <!--<record id="enjoy_jefe_proyecto_service_contract_rule" model="ir.rule">-->
+        <!--<field name="name">Mostra sus Servicos Contratados</field>-->
+        <!--<field name="model_id" ref="model_enjoy_service_contract"/>-->
+        <!--<field name="domain_force">[('contract_id.client_id.organismo_id.department_id.member_ids.user_id',-->
+        <!--'=',user.id)]-->
+        <!--</field>-->
+        <!--<field name="groups" eval="[(4,ref('group_enjoy_jefe_proyecto'))]"/>-->
+        <!--</record>-->
+        <!--<record id="enjoy_jefe_proyecto_ingresos_rule" model="ir.rule">-->
+        <!--<field name="name">Mostra Ingresos de Departamentoo</field>-->
+        <!--<field name="model_id" ref="model_enjoy_ingreso"/>-->
+        <!--<field name="domain_force">-->
+        <!--[('desglose_id.contract_id.client_id.organismo_id.department_id.member_ids.user_id', '=',user.id)]-->
+        <!--</field>-->
+        <!--<field name="groups" eval="[(4,ref('group_enjoy_jefe_proyecto'))]"/>-->
+        <!--</record>-->
+    </data>
+</openerp>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openerp>
+    <data><record model="nomencladores.course" id="">
+                <field name=""></field>
+                <field name=""></field>
+            </record><record model="nomencladores.session" id="">
+                <field name=""></field>
+                <field name=""></field>
+            </record></data>
+</openerp>

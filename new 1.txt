@@ -1,0 +1,49 @@
+Pasos para instalar, configurar y trabajar en git
+
+1- Instalar Instalar Git en Ubuntu
+	apt-get install git
+
+2- Configuracion inicial Git
+	git config --global user.name "Raciel Roche Trabajo"
+	git config --global user.email roche@uci.cu
+
+3- Iniciar en Git
+	Importante aclarar que Git y Github no son lo mismo. Git es un sistema para el contol de versiones y github un repositorio de remoto de archivos
+	Se puede iniciar de 2 maneras: 1- Creando un repositorio de un proyecto o directorio y 2- clonando un repositorio remoto (github)
+	
+	3.1- Crear de un repositorio de un directorio o proyecto
+			Unicarse en el directorio y ejecutar:
+			git init
+			- Si el directorio ya posee archivos dentro entonces ejecutar
+			git add *
+			git add README
+			git commit –m "versión inicial del proyecto" (Esto pone a todos los arquivos en seguimiento y les da una confirmacion inicial, commit)
+	3.2- Obtener copia de un repositorio existente
+			Unicarse en el directorio del proyecto (vacio)
+			git clone git://github.com/schacon/grit.git enjoy
+4- Guardando cambios en el repositorio
+	Ver el estado de tu repositorio:
+	git status
+	
+	4.1 Seguimiento de nuevos archivos
+	git add archivo_nuevo
+	4.2- Preparando archivos modificados
+	git status: tambien te muestra los archivos modificados
+	git add: Sirve para preparar archivos modificados
+	git diff: Forma detallada de ver los cambios
+	git diff –-staged: Ver los cambios que has preparado y que irán en tu próxima confirmación
+	git commit -m "Mensaje del Conmit" -a : Este comando pasa todos los archivos en seguimiento al area al almacenamiento sin pasar por lapreparacion. 
+	git log: Historial de Confirmaciones.  
+	git log –p -2
+	git log --pretty=oneline
+	gitk:  vista de los cambios
+	
+5- Repositorios remotos(github)
+	git remote  : ver repositorios Remotos
+	git remote add [nombre] [url]: Agragr repositorio remotos
+	git fetch [remote-name]  revibir datos del servidor
+	git clone: configura tu rama local maestra para que siga la rama remota maestra del servidor del cual clonaste (asumiendo que el repositorio remoto tiene una rama maestra)
+	git pull: recupera la información del servidor del que clonaste, y automáticamente se intenta unir con el código con el que estás trabajando actualmente.
+	git push [nombre-remoto][nombre-rama] Si quieres enviar tu rama maestra (master) a tu servidor origen (origin)
+	git tag -a v1.4 -m 'my version 1.4' Agregar Etiquetas
+			
