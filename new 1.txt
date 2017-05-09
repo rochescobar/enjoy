@@ -52,4 +52,11 @@ Pasos para instalar, configurar y trabajar en git
     en linux es
     ssh-keygen -t rsa -C "your.email@example.com" -b 4096
     cat ~/.ssh/id_rsa.pub
+
+
+
+
+mejias1990
+mejias1990**
+90062639427
 			

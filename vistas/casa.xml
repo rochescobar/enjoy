@@ -21,7 +21,7 @@
                     <field name="fpago"/>
                     <field name="nivel"/>
                     <group expand="1" string="Group By">
-                        <filter name="groupby_provincia" context="{'group_by' : 'provincia'}"
+                        <filter name="groupby_provincia_id" context="{'group_by' : 'provincia'}"
                                 string="Provincia"/>
                         <filter name="groupby_nivelx" context="{'group_by' : 'nivelx'}"
                                 string="Nivel"/>
