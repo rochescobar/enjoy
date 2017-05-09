@@ -1,0 +1,1381 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* enjoy
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0-20161026\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-09 00:08-0400\n"
+"PO-Revision-Date: 2017-05-09 00:14-0400\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.1\n"
+"Last-Translator: \n"
+"Language: en_EN\n"
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.report_enjoy_catalogo
+#, fuzzy
+msgid "<span style=\"color:ffffff\">Localización</span>"
+msgstr "<span style=\"color:ffffff\">Location</span>"
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.report_enjoy_casa
+msgid "<strong>Baños</strong>"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.report_enjoy_casa
+msgid "<strong>Camas</strong>"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.report_enjoy_casa
+msgid "<strong>Cantidad de Dormitorios:</strong>"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.report_enjoy_casa
+msgid "<strong>Cantidad de Huespedes:</strong>"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.report_enjoy_casa
+msgid "<strong>Dirección</strong>"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.report_enjoy_casa
+msgid "<strong>Dispone de:</strong>"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.report_enjoy_casa
+msgid "<strong>Es perfecto para:</strong>"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.report_enjoy_casa
+msgid "<strong>Propiedad:</strong>"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.report_enjoy_casa
+msgid "<strong>Teléfono</strong>"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.report_enjoy_casa
+msgid "<strong>Tipo de Alojamiento</strong>"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_viaje_aire
+msgid "A/C"
+msgstr ""
+
+#. module: enjoy
+#: model:res.groups,name:enjoy.group_enjoy_admin
+msgid "Administrador"
+msgstr ""
+
+#. module: enjoy
+#: selection:enjoy.casa,alojamiento:0
+msgid "Apartamento"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_viaje_auto_id
+msgid "Auto"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.actions.act_window,name:enjoy.action_auto
+#: model:ir.model,name:enjoy.model_enjoy_auto
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_lugar_auto_ids
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_modelo_auto_ids
+#: model:ir.ui.menu,name:enjoy.enjoy_autos
+#: model:ir.ui.menu,name:enjoy.menu_enjoy
+#: model:ir.ui.view,arch_db:enjoy.enjoy_reporte_mail_view
+#: model:ir.ui.view,arch_db:enjoy.lugar_form
+#: model:ir.ui.view,arch_db:enjoy.modelo_form
+msgid "Autos"
+msgstr ""
+
+#. module: enjoy
+#: selection:enjoy.reporte,state:0
+msgid "Borrador"
+msgstr ""
+
+#. module: enjoy
+#: selection:enjoy.reporte,state:0
+msgid "Cancelado"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.enjoy_reporte_mail_view
+msgid "Cancelar"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.reporte_form
+msgid "Cancelar Reporte"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_dormitorios
+msgid "Cant. Dormitorios"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_capacidad
+msgid "Canti. Huespedes"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_banno_cantidad
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_cama_cantidad
+msgid "Cantidad"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_banno_ids
+msgid "Cantidad de Baños"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_auto_capacidad
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_viaje_capacidad
+msgid "Capacidad"
+msgstr ""
+
+#. module: enjoy
+#: selection:enjoy.casa,alojamiento:0
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_banno_casa_id
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_cama_casa_id
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_servicio_casa_id
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_zona_casa_id
+#: model:ir.ui.view,arch_db:enjoy.reporte_form
+msgid "Casa"
+msgstr "House"
+
+#. module: enjoy
+#: model:ir.actions.act_window,name:enjoy.action_casa
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_lugar_casa_ids
+#: model:ir.ui.menu,name:enjoy.enjoy_casas
+#: model:ir.ui.menu,name:enjoy.menu_enjoy_casa
+#: model:ir.ui.view,arch_db:enjoy.catalogo_form
+#: model:ir.ui.view,arch_db:enjoy.lugar_form
+msgid "Casas"
+msgstr "Houses"
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_catalogo_casa_ids
+msgid "Casas y Apartamentos"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model,name:enjoy.model_enjoy_catalogo
+msgid "Catalogo de casa"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_report_mail_catalogo_id
+#: model:ir.ui.view,arch_db:enjoy.catalogo_form
+msgid "Catálogo"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.actions.act_window,name:enjoy.action_catalogo
+#: model:ir.ui.menu,name:enjoy.menu_enjoy_casa_catalogo
+msgid "Catálogos"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_auto_chofer
+#: model:ir.ui.view,arch_db:enjoy.auto_form
+msgid "Chofer"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.auto_form
+msgid "Chofer del auto"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_reporte_cliente
+msgid "Cliente"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.actions.act_window,name:enjoy.action_comision
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_comision_ids
+#: model:ir.ui.menu,name:enjoy.menu_enjoy_casa_comision
+msgid "Comisiones"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_comision_comision
+msgid "Comisión"
+msgstr ""
+
+#. module: enjoy
+#: selection:enjoy.banno,tipo:0
+msgid "Compartido"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model,name:enjoy.model_enjoy_condicion
+msgid "Condicion "
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_tablilla_condicion_ids
+msgid "Condiciones"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.tablilla_form
+msgid "Condiciones de la Renta"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_diario_condicion_id
+msgid "Condición"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.menu,name:enjoy.enjoy_auto_config
+#: model:ir.ui.menu,name:enjoy.enjoy_casa_config
+msgid "Configuración"
+msgstr ""
+
+#. module: enjoy
+#: selection:enjoy.reporte,state:0
+msgid "Confirmado"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.reporte_form
+msgid "Confirmar Reporte"
+msgstr ""
+
+#. module: enjoy
+#: selection:enjoy.casa,nivel:0
+msgid "Confort"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_transfer_precio
+msgid "Costo Final"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_auto_create_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_banno_create_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_cama_create_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_create_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_catalogo_create_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_comision_create_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_condicion_create_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_destino_create_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_diario_create_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_lugar_create_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_modelo_create_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_provincia_create_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_report_mail_create_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_reporte_create_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_servicio_create_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_tablilla_create_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_transfer_create_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_traslado_create_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_viaje_create_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_zona_create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_auto_create_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_banno_create_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_cama_create_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_create_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_catalogo_create_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_comision_create_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_condicion_create_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_destino_create_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_diario_create_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_lugar_create_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_modelo_create_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_provincia_create_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_report_mail_create_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_reporte_create_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_servicio_create_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_tablilla_create_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_transfer_create_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_traslado_create_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_viaje_create_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_zona_create_date
+msgid "Created on"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.casa_form
+msgid "Datos del Hospedaje"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.enjoy_viaje_form
+msgid "Datos del Viaje"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_condicion_descrip
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_reporte_descrip
+msgid "Descripción"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_catalogo_desde
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_reporte_fecha_inicio
+msgid "Desde"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_destino_name
+msgid "Destinatario"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_traslado_destino
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_viaje_destino
+msgid "Destino"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model,name:enjoy.model_enjoy_destino
+msgid "Destinos para los Correos de los catalogo"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model,name:enjoy.model_enjoy_diario
+msgid "Diario "
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_dir
+msgid "Dirección"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_auto_display_name
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_banno_display_name
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_cama_display_name
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_display_name
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_catalogo_display_name
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_comision_display_name
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_condicion_display_name
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_destino_display_name
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_diario_display_name
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_lugar_display_name
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_modelo_display_name
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_provincia_display_name
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_report_mail_display_name
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_reporte_display_name
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_servicio_display_name
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_tablilla_display_name
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_transfer_display_name
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_traslado_display_name
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_viaje_display_name
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_zona_display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_dispone
+msgid "Dispone de"
+msgstr ""
+
+#. module: enjoy
+#: selection:enjoy.casa,nivel:0
+msgid "Económico"
+msgstr ""
+
+#. module: enjoy
+#: selection:enjoy.casa,fpago:0
+msgid "Efectivo"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_report_mail_company_id
+msgid "Empresa"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.module.category,name:enjoy.module_category_enjoy
+msgid "Enjoy Cuba"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.enjoy_reporte_mail_view
+msgid "Enviar"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_para
+msgid "Es Perfecto para"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_reporte_state
+#: model:ir.ui.view,arch_db:enjoy.enjoy_reporte_search
+msgid "Estado"
+msgstr ""
+
+#. module: enjoy
+#: sql_constraint:enjoy.casa:0
+msgid "Existe una casa con ese nombre"
+msgstr ""
+
+#. module: enjoy
+#: sql_constraint:enjoy.comision:0
+msgid "Existen comisiones repetidas"
+msgstr ""
+
+#. module: enjoy
+#: sql_constraint:enjoy.banno:0
+msgid "Existen tipos de baños repetidos"
+msgstr ""
+
+#. module: enjoy
+#: sql_constraint:enjoy.cama:0
+msgid "Existen tipos de camas repetidos"
+msgstr ""
+
+#. module: enjoy
+#: sql_constraint:enjoy.viaje:0
+msgid "Existen viajes repetidos"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.actions.report.xml,name:enjoy.action_report_casa
+#: model:ir.actions.report.xml,name:enjoy.action_report_catalogo
+msgid "Exportar Catálogo"
+msgstr ""
+
+#. module: enjoy
+#: selection:enjoy.cama,tipo:0
+msgid "Extra Matrimonial"
+msgstr ""
+
+#. module: enjoy
+#: selection:enjoy.casa,para:0
+msgid "Familia"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_transfer_fecha
+msgid "Fecha"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_fpago
+msgid "Forma de Pago"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.enjoy_casa_search
+#: model:ir.ui.view,arch_db:enjoy.enjoy_reporte_search
+msgid "Group By"
+msgstr ""
+
+#. module: enjoy
+#: selection:enjoy.casa,para:0
+msgid "Grupos"
+msgstr ""
+
+#. module: enjoy
+#: selection:enjoy.casa,dispone:0
+msgid "Habitación Compartida"
+msgstr ""
+
+#. module: enjoy
+#: selection:enjoy.casa,dispone:0
+msgid "Habitación Privada"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.actions.act_window,help:enjoy.action_provincia
+msgid "Haga clic aquí para añadir un provincia al sistema."
+msgstr ""
+
+#. module: enjoy
+#: model:ir.actions.act_window,help:enjoy.action_reporte
+msgid "Haga clic aquí para añadir un reporte al sistema."
+msgstr ""
+
+#. module: enjoy
+#: model:ir.actions.act_window,help:enjoy.action_auto
+msgid "Haga clic aquí para añadir una auto al sistema."
+msgstr ""
+
+#. module: enjoy
+#: model:ir.actions.act_window,help:enjoy.action_casa
+msgid "Haga clic aquí para añadir una casa al sistema."
+msgstr ""
+
+#. module: enjoy
+#: model:ir.actions.act_window,help:enjoy.action_catalogo
+msgid "Haga clic aquí para añadir una catalogo al sistema."
+msgstr ""
+
+#. module: enjoy
+#: model:ir.actions.act_window,help:enjoy.action_comision
+msgid "Haga clic aquí para añadir una comision al sistema."
+msgstr ""
+
+#. module: enjoy
+#: model:ir.actions.act_window,help:enjoy.action_lugar
+msgid "Haga clic aquí para añadir una lugar al sistema."
+msgstr ""
+
+#. module: enjoy
+#: model:ir.actions.act_window,help:enjoy.action_modelo
+msgid "Haga clic aquí para añadir una modelo al sistema."
+msgstr ""
+
+#. module: enjoy
+#: model:ir.actions.act_window,help:enjoy.action_servicio
+msgid "Haga clic aquí para añadir una servicio al sistema."
+msgstr ""
+
+#. module: enjoy
+#: model:ir.actions.act_window,help:enjoy.action_tablilla
+msgid "Haga clic aquí para añadir una tablilla al sistema."
+msgstr ""
+
+#. module: enjoy
+#: model:ir.actions.act_window,help:enjoy.action_transfer
+msgid "Haga clic aquí para añadir una transfer al sistema."
+msgstr ""
+
+#. module: enjoy
+#: model:ir.actions.act_window,help:enjoy.action_viaje
+msgid "Haga clic aquí para añadir una viaje al sistema."
+msgstr ""
+
+#. module: enjoy
+#: model:ir.actions.act_window,help:enjoy.action_zona
+msgid "Haga clic aquí para añadir una zona al sistema."
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_catalogo_hasta
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_reporte_fecha_fin
+msgid "Hasta"
+msgstr ""
+
+#. module: enjoy
+#: selection:enjoy.reporte,state:0
+msgid "Hecho"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_auto_id
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_banno_id
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_cama_id
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_id
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_catalogo_id
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_comision_id
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_condicion_id
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_destino_id
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_diario_id
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_lugar_id
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_modelo_id
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_provincia_id
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_report_mail_id
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_reporte_id
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_servicio_id
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_tablilla_id
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_transfer_id
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_traslado_id
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_viaje_id
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_zona_id
+msgid "ID"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_condicion_name
+msgid "Identificador"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_image_foot1
+msgid "Imagen Abajo1"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_image_foot2
+msgid "Imagen Abajo2"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_image_lateral
+msgid "Imagen Lateral"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.casa_form
+msgid "Imagenes para el Catálogo"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.casa_form
+msgid "Información Personal"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_auto___last_update
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_banno___last_update
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_cama___last_update
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa___last_update
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_catalogo___last_update
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_comision___last_update
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_condicion___last_update
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_destino___last_update
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_diario___last_update
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_lugar___last_update
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_modelo___last_update
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_provincia___last_update
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_report_mail___last_update
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_reporte___last_update
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_servicio___last_update
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_tablilla___last_update
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_transfer___last_update
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_traslado___last_update
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_viaje___last_update
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_zona___last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_auto_write_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_banno_write_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_cama_write_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_write_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_catalogo_write_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_comision_write_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_condicion_write_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_destino_write_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_diario_write_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_lugar_write_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_modelo_write_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_provincia_write_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_report_mail_write_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_reporte_write_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_servicio_write_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_tablilla_write_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_transfer_write_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_traslado_write_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_viaje_write_uid
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_zona_write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_auto_write_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_banno_write_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_cama_write_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_write_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_catalogo_write_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_comision_write_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_condicion_write_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_destino_write_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_diario_write_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_lugar_write_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_modelo_write_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_provincia_write_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_report_mail_write_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_reporte_write_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_servicio_write_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_tablilla_write_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_transfer_write_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_traslado_write_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_viaje_write_date
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_zona_write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_auto_licencia
+msgid "Licencia"
+msgstr ""
+
+#. module: enjoy
+#: selection:enjoy.traslado,name:0
+msgid "Local"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_provincia_lugar_ids
+#: model:ir.ui.view,arch_db:enjoy.provincia_form
+msgid "Localizaciones"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_lugar
+#: model:ir.ui.view,arch_db:enjoy.enjoy_casa_search
+msgid "Localización"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_diario_name
+msgid "Lugar"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_auto_radica
+msgid "Lugar donde Radica"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.actions.act_window,name:enjoy.action_lugar
+#: model:ir.ui.menu,name:enjoy.enjoy_lugars
+msgid "Lugares"
+msgstr ""
+
+#. module: enjoy
+#: selection:enjoy.casa,nivel:0
+msgid "Lujo"
+msgstr ""
+
+#. module: enjoy
+#: selection:enjoy.casa,para:0
+msgid "Mascotas"
+msgstr ""
+
+#. module: enjoy
+#: selection:enjoy.cama,tipo:0
+msgid "Matrimonial"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_image_medium
+msgid "Medium-sized photo"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,help:enjoy.field_enjoy_casa_image_medium
+msgid ""
+"Medium-sized photo of the employee. It is automatically resized as a "
+"128x128px image, with aspect ratio preserved. Use this field in form views "
+"or some kanban views."
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_auto_modelo_id
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_modelo_name
+#: model:ir.ui.view,arch_db:enjoy.modelo_form
+msgid "Modelo"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model,name:enjoy.model_enjoy_modelo
+msgid "Modelo de los Autos"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.actions.act_window,name:enjoy.action_modelo
+#: model:ir.ui.menu,name:enjoy.enjoy_modelos
+msgid "Modelos"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_nivel
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_nivelx
+#: model:ir.ui.view,arch_db:enjoy.enjoy_casa_search
+msgid "Nivel"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_auto_name
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_catalogo_name
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_catalogo_nombre
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_lugar_name
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_provincia_name
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_servicio_name
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_tablilla_name
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_viaje_name
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_zona_name
+#: model:ir.ui.view,arch_db:enjoy.casa_form
+#: model:ir.ui.view,arch_db:enjoy.enjoy_viaje_form
+#: model:ir.ui.view,arch_db:enjoy.provincia_form
+#: model:ir.ui.view,arch_db:enjoy.servicio_form
+#: model:ir.ui.view,arch_db:enjoy.tablilla_form
+msgid "Nombre"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_comision_casa_id
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_reporte_name
+msgid "Nombre de la Casa"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.reporte_form
+msgid "Nombre de la Propiedad"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_name
+msgid "Nombre de la Propiedad "
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.provincia_form
+msgid "Nombre de la Provincia"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.tablilla_form
+msgid "Nombre de la Tablilla"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.modelo_form
+msgid "Nombre del Modelo"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.catalogo_form
+msgid "Nombre del catálogo"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.lugar_form
+msgid "Nombre del lugar"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_traslado_origen
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_viaje_origen
+msgid "Origen"
+msgstr ""
+
+#. module: enjoy
+#: selection:enjoy.cama,tipo:0
+msgid "Personal"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_image
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_servicio_image
+msgid "Photo"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.tablilla_form
+msgid "Por Día"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_precio
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_viaje_precio
+msgid "Precio"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_comision_precio
+msgid "Precio de la casa"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model,name:enjoy.model_enjoy_comision
+msgid "Precio de venta de casa por Vendedor"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_transfer_auto_precio
+msgid "Precio del Viaje"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.casa_form
+msgid "Precio y Forma de Pago"
+msgstr ""
+
+#. module: enjoy
+#: selection:enjoy.banno,tipo:0
+msgid "Privado"
+msgstr ""
+
+#. module: enjoy
+#: selection:enjoy.casa,dispone:0
+msgid "Propiedad Entera"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_propiedad
+msgid "Propiedad de "
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_auto_propietario
+msgid "Propietario"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_provincia
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_catalogo_lugar
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_lugar_provincia_id
+#: model:ir.ui.view,arch_db:enjoy.enjoy_casa_search
+msgid "Provincia"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.menu,name:enjoy.enjoy_provincias
+msgid "Provincias"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.tablilla_form
+msgid "Recorrido (Renta por Día (8 horas de Trabajo))"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.tablilla_form
+msgid "Recorrido (Traslados)"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model,name:enjoy.model_enjoy_banno
+msgid "Registro de Bannos"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model,name:enjoy.model_enjoy_servicio
+msgid "Registro de Servicios "
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model,name:enjoy.model_enjoy_zona
+msgid "Registro de Zona "
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model,name:enjoy.model_enjoy_cama
+msgid "Registro de cama "
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model,name:enjoy.model_enjoy_casa
+msgid "Registro de casa "
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model,name:enjoy.model_enjoy_provincia
+msgid "Registro de provincia"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_report_mail_destino_ids
+msgid "Remitentes"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_tablilla_diario_ids
+msgid "Renta por Días"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.report_enjoy_casa
+msgid "Renta:"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_destino_report_id
+msgid "Reporte"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.reporte_form
+msgid "Reporte Hecho"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model,name:enjoy.model_enjoy_reporte
+msgid "Reporte de Reservacion de la Casa"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.reporte_form
+msgid "Reporte de reserva"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.actions.act_window,name:enjoy.action_enjoy_reporte_mail_menu
+msgid "Reporte enjoy"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.enjoy_reporte_mail_view
+msgid "Reporte mail"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.actions.act_window,name:enjoy.action_reporte
+#: model:ir.ui.menu,name:enjoy.enjoy_reportes
+msgid "Reportes"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.reporte_form
+msgid "Reserva desde"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_comision_user_id
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_reporte_user_id
+msgid "Responsable"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.actions.act_window,name:enjoy.action_servicio
+#: model:ir.ui.menu,name:enjoy.menu_enjoy_casa_servicio
+#: model:ir.ui.view,arch_db:enjoy.report_enjoy_casa
+msgid "Servicios"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_servicio_ids
+msgid "Servicios que ofrecen"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_image_small
+msgid "Small-sized photo"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,help:enjoy.field_enjoy_casa_image_small
+msgid ""
+"Small-sized photo of the employee. It is automatically resized as a 64x64px "
+"image, with aspect ratio preserved. Use this field anywhere a small image is "
+"required."
+msgstr ""
+
+#. module: enjoy
+#: model:ir.actions.act_window,name:enjoy.action_tablilla
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_condicion_tablilla_id
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_diario_tablilla_id
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_traslado_tablilla_id
+#: model:ir.ui.menu,name:enjoy.enjoy_tablilla
+msgid "Tablilla"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model,name:enjoy.model_enjoy_tablilla
+msgid "Tablilla "
+msgstr ""
+
+#. module: enjoy
+#: selection:enjoy.casa,fpago:0
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_auto_tarjeta
+msgid "Tarjeta"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_auto_phone
+msgid "Telefono"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_phone
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_viaje_phone
+msgid "Teléfono"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_auto_aire
+msgid "Tiene Aire Acondicionado?"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_banno_tipo
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_cama_tipo
+msgid "Tipo"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_alojamiento
+msgid "Tipo de Alojamiento"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_traslado_name
+msgid "Tipo de Viaje"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_cama_ids
+msgid "Tipos de Cama"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.module.category,description:enjoy.module_category_enjoy
+msgid "Tipos de Usuarios en dependencia del rol que desempenan en la empresa"
+msgstr ""
+
+#. module: enjoy
+#: selection:enjoy.traslado,name:0
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_viaje_transfer_ids
+msgid "Transfer"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.actions.act_window,name:enjoy.action_transfer
+#: model:ir.ui.menu,name:enjoy.enjoy_transfers
+msgid "Transferes"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model,name:enjoy.model_enjoy_transfer
+msgid "Transfers "
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.enjoy_viaje_form
+msgid "Transfers del Auto para este Recorrido"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model,name:enjoy.model_enjoy_traslado
+msgid "Traslado "
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_tablilla_traslado_ids
+#: model:ir.ui.view,arch_db:enjoy.tablilla_form
+msgid "Traslados"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_transfer_utilidad
+msgid "Utilidades"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_diario_van11
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_traslado_van11
+msgid "Van 11 o mas plazas"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_diario_van4
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_traslado_van4
+msgid "Van 4-7 plazas"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_diario_van8
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_traslado_van8
+msgid "Van 8-10 plazas"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_diario_van3
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_traslado_van3
+msgid "Van hasta 3 plazas"
+msgstr ""
+
+#. module: enjoy
+#: model:res.groups,name:enjoy.group_enjoy_vendedor
+msgid "Vendedor"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_transfer_viaje_id
+msgid "Viaje"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.actions.act_window,name:enjoy.action_viaje
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_auto_viaje_ids
+#: model:ir.ui.menu,name:enjoy.enjoy_viajes
+#: model:ir.ui.view,arch_db:enjoy.auto_form
+#: model:ir.ui.view,arch_db:enjoy.casa_form
+#: model:ir.ui.view,arch_db:enjoy.enjoy_viaje_form
+msgid "Viajes"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model,name:enjoy.model_enjoy_viaje
+msgid "Viajes de los Autos"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.actions.act_window,name:enjoy.action_zona
+#: model:ir.model,name:enjoy.model_enjoy_lugar
+#: model:ir.ui.menu,name:enjoy.menu_enjoy_casa_zona
+#: model:ir.ui.view,arch_db:enjoy.report_enjoy_casa
+msgid "Zonas"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model.fields,field_description:enjoy.field_enjoy_casa_zona_ids
+msgid "Zonas que pueden utilizar"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.reporte_form
+msgid "al"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.auto_form
+#: model:ir.ui.view,arch_db:enjoy.auto_tree
+msgid "auto"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.enjoy_auto_search
+msgid "autos"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.casa_form
+#: model:ir.ui.view,arch_db:enjoy.casa_tree
+#: model:ir.ui.view,arch_db:enjoy.lugar_form
+msgid "casa"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.enjoy_casa_search
+msgid "casas"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.catalogo_form
+#: model:ir.ui.view,arch_db:enjoy.catalogo_tree
+msgid "catalogo"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.enjoy_catalogo_search
+msgid "catalogos"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.comision_tree
+msgid "comision"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.enjoy_comision_search
+msgid "comisions"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.model,name:enjoy.model_enjoy_report_mail
+msgid "enjoy Reporte Base"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.lugar_form
+#: model:ir.ui.view,arch_db:enjoy.lugar_tree
+msgid "lugar"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.enjoy_lugar_search
+msgid "lugars"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.modelo_form
+#: model:ir.ui.view,arch_db:enjoy.modelo_tree
+msgid "modelo"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.enjoy_modelo_search
+msgid "modelos"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.provincia_form
+#: model:ir.ui.view,arch_db:enjoy.provincia_tree
+msgid "provincia"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.actions.act_window,name:enjoy.action_provincia
+#: model:ir.ui.view,arch_db:enjoy.enjoy_provincia_search
+msgid "provincias"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.reporte_form
+#: model:ir.ui.view,arch_db:enjoy.reporte_tree
+msgid "reporte"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.enjoy_reporte_search
+msgid "reportes"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.servicio_form
+#: model:ir.ui.view,arch_db:enjoy.servicio_tree
+msgid "servicio"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.enjoy_servicio_search
+msgid "servicios"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.tablilla_form
+#: model:ir.ui.view,arch_db:enjoy.tablilla_tree
+msgid "tablilla"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.enjoy_tablilla_search
+msgid "tablillas"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.transfer_tree
+msgid "transfer"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.enjoy_transfer_search
+msgid "transfers"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.enjoy_viaje_form
+msgid "viaje"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.enjoy_viaje_search
+msgid "viajes"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.zona_tree
+msgid "zona"
+msgstr ""
+
+#. module: enjoy
+#: model:ir.ui.view,arch_db:enjoy.enjoy_zona_search
+msgid "zonas"
+msgstr ""
